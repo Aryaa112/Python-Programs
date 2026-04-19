@@ -4,6 +4,10 @@ Approach: Iterate through the list and keep track of maximum and minimum element
 def largestnsmallest(l1):
     max = float("-inf")
     min = float("inf")
+
+    if not l1:
+        return None
+        
     for i in range(len(l1)):
         if max < l1[i]:
             max = l1[i]
